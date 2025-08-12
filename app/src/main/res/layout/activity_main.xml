@@ -119,14 +119,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amount_edit_text"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:textColor="#1CED05"
         android:background="#2196F3"
-        android:id="@+id/button"
+        android:id="@+id/convert_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -146,7 +148,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/convert_button" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -161,6 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/result_view"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:enabled="false"
